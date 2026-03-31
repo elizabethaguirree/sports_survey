@@ -40,7 +40,7 @@ jobs:
         run: pnpm install --no-frozen-lockfile
 
       - name: Build app
-        run: pnpm build
+        run: pnpm exec vite build
 
       - name: Deploy to Azure Static Web Apps
         id: builddeploy
